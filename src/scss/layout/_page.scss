@@ -7,18 +7,47 @@
 	grid-template-columns: 1fr 1fr;
 }
 .sectionLeft{
-height: 100vh;
 width: 40vw;
 transform: translate(0%,-10%);
 background-color: $color-principal;
+&__title {
+	color: $color-mediumprincipal;
+	text-align: center;
+}
 }
 .sectionRight{
-height: 100vh;
 width:66.7vw;
 transform: translate(-10%,0%);
 background-color: $color-mediumprincipal;
-@media all and (min-width: 768px) {
-	height: 100.9vh;
+padding-bottom: 60px;
+
+&__title {
+	color: $color-principal;
+	text-align: center;
+	padding-top: 20px;
+}
+&__article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+
+	&--box {
+		border: 1px solid red;
+		@media all and (min-width: 768px) {
+			margin-left:20px}
+	}
+	&--img {
+		width: 150px;
+		height: 150px;
+	}
+	@media all and (min-width: 768px) {
+		flex-direction: row;
+		align-items: center;
+		margin-left: 40px;
+		margin-right: 40px;
+	  }
 }
 }
 

@@ -1,27 +1,43 @@
 .page__header {
-	display: block;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	background-color: $color-lightprincipal;
-  width: 100vw;
-  height: 25vh;
-}
-.menu {
-	color: white;
+  	width: 100vw;
+	height: 15vh;
+	  &--profile{
+		  display:flex;
+		  align-self: center;
+		  justify-self: center;
+		  width: 50%;
+		  border-radius: 50%;
+	  }
 	@media all and (min-width: 768px) {
-		padding-right: 80px;
+		height: 20vh;
 	}
 	@media all and (min-width: 1200px) {
-		padding-right: 200px;
+		height: 30vh;
 	}
+	@media all and (min-width: 1400px) {
+		height: 50vh;
+	}
+	
+}
+.menu {
+	color: $color-principal;
+	// @media all and (min-width: 768px) {
+	// 	padding-right: 80px;
+	// }
+	// @media all and (min-width: 1200px) {
+	// 	padding-right: 200px;
+	// }
 
 	&__list {
-		list-style-type: none;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		padding: 15px;
 
 		&--item {
-			margin-right: 20px;
+			margin-left: 20px;
 		}
 	}
 }
