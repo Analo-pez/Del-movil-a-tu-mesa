@@ -24,20 +24,33 @@
 }
 .menu {
 	color: $color-principal;
-	// @media all and (min-width: 768px) {
-	// 	padding-right: 80px;
-	// }
-	// @media all and (min-width: 1200px) {
-	// 	padding-right: 200px;
-	// }
+	@media all and (min-width: 768px) {
+		padding-right: 80px;
+	}
+	@media all and (min-width: 1200px) {
+		padding-right: 200px;
+	}
 
 	&__list {
 		display: flex;
 		justify-content: flex-start;
 		padding: 15px;
-
+		
 		&--item {
+			border: 1px solid $color-principal;
+			border-radius: 10px;
+			background-color: $color-mediumprincipal;
+			color: $color-principal;
+			padding: 5px;
 			margin-left: 20px;
+			cursor: pointer;
+			@media all and (min-width: 768px) {
+				font-size:20px;
+				margin: 10px;
+			}
+			@media all and (min-width: 1200px) {
+				font-size:30px;
+			}
 		}
 	}
 }

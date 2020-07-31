@@ -7,12 +7,24 @@
 	grid-template-columns: 1fr 1fr;
 }
 .sectionLeft{
+margin-top: 100px;
+padding-right: 50px;
 width: 40vw;
 transform: translate(0%,-10%);
 background-color: $color-principal;
+@media all and (min-width: 768px) {
+	margin-top:60px}
 &__title {
 	color: $color-mediumprincipal;
 	text-align: center;
+}
+&__text {
+	color: $color-lightprincipal;
+	text-align: center;
+	margin: 10px;
+	@media all and (min-width: 768px) {
+		font-size:20px;
+		margin: 20px;}
 }
 }
 .sectionRight{
