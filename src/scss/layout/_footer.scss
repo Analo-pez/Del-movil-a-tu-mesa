@@ -9,8 +9,14 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 15%;
- 
     color: $color-principal;
+    @media all and (min-width: 768px) {
+      font-size: 25px;
+      padding-right: 25%;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 40px;
+    }
       .fab,
       .fas {
         display: inline-block;
@@ -22,9 +28,13 @@
       }
 
       .fab:after {
-        content: "·";
+        content: " · ";
         margin: 8px;
         font-weight: bold;
+        @media all and (min-width: 768px) {
+          content: " | ";
+          margin: 15px;
+        }
       }
   }
 }

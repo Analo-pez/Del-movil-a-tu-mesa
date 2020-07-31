@@ -17,6 +17,9 @@ background-color: $color-principal;
 &__title {
 	color: $color-mediumprincipal;
 	text-align: center;
+	@media all and (min-width: 768px) {
+		text-transform:uppercase;
+		font-size: 35px}
 }
 &__text {
 	color: $color-lightprincipal;
@@ -25,6 +28,10 @@ background-color: $color-principal;
 	@media all and (min-width: 768px) {
 		font-size:20px;
 		margin: 20px;}
+	@media all and (min-width: 1200px) {
+		font-size: 25px;
+		margin-right: 80px;
+	}
 }
 }
 .sectionRight{
@@ -37,8 +44,14 @@ padding-bottom: 60px;
 	color: $color-principal;
 	text-align: center;
 	padding-top: 20px;
+	padding-bottom: 20px;
+	@media all and (min-width: 768px) {
+		text-transform:uppercase;
+	font-size: 30px}
+
 }
 &__article {
+	border-top: 5px solid $color-lightprincipal;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -46,9 +59,12 @@ padding-bottom: 60px;
 	text-align: center;
 
 	&--box {
-		border: 1px solid red;
 		@media all and (min-width: 768px) {
-			margin-left:20px}
+			margin-left:20px;
+			font-size: 20px;}
+		@media all and (min-width: 1200px) {
+			font-size: 25px;
+		}
 	}
 	&--img {
 		width: 150px;
