@@ -3,13 +3,12 @@
 }
 
 .mainPage {
-	padding-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	&__drinks {
-		margin-bottom: 30px;
-		width: 380px;
+		margin-bottom: 50px;
 		&--type {
 			display:flex;
 			justify-content: space-between;
@@ -18,7 +17,7 @@
 		}
 	}
 	&__share {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 		&--type {
 			display:flex;
 			justify-content: space-between;
