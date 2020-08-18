@@ -16,25 +16,6 @@
     }
     @media all and (min-width: 1200px) {
       font-size: 30px;
-    }
-      .fab,
-      .fas {
-        display: inline-block;
-        transition: color ease 0.5s;
-      }
-
-      .fab:hover, .fas:hover {
-        color: black;
-      }
-
-      .fab:after {
-        content: " · ";
-        margin: 8px;
-        font-weight: bold;
-        @media all and (min-width: 768px) {
-          content: " | ";
-          margin: 15px;
-        }
-      }
+    } 
   }
 }

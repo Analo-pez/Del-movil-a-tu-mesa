@@ -1,0 +1,62 @@
+.form {
+    font-size: 0.875em;
+    padding-bottom: 20px;
+  
+    &__name {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    &__img {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+  
+      &--box {
+        margin-top: 10px;
+        display: flex;
+  
+        &--button {
+          width: 140px;
+          height: 30px;
+          text-align: center;
+          padding-top: 5px;
+          color: white;
+          border-radius: 5px;
+          border-style: none;
+          background-color: black;
+          cursor: pointer;
+        }
+        }
+    }
+  
+    &__email {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+  
+    &__phone {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+}
+  
+    // input {
+    //   padding-left: 5px;
+    //   border: 0.5px solid $color-principal;
+    //   height: 30px;
+    //   margin-top: 7px;
+    // }
+    // ::placeholder {
+    //   color: $color-principal;
+    // }
+  
+    fieldset {
+      padding: 30px;
+      border: transparent;
+    }
+  
+  

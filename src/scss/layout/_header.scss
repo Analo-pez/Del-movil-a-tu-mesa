@@ -6,95 +6,12 @@
 		  display:flex;
 		  align-self: center;
 		  justify-self: center;
-		  width: 50%;
-		  border-radius: 50%;
+		  padding: 10px;
 	  }
 	
 }
 .menu {
 	color: $color-principal;
-
-	&__list {
-		display: flex;
-		justify-content: flex-start;
-		padding: 10%;
-		@media all and (min-width: 768px) {
-			padding-top: 12%;
-		}
-		@media all and (min-width: 1200px) {
-			padding: 15%;
-		}
-		
-		&--item {
-			border: 1px solid $color-principal;
-			border-radius: 10px;
-			background-color: $color-mediumprincipal;
-			color: $color-principal;
-			padding: 5px;
-			cursor: pointer;
-			@media all and (min-width: 768px) {
-				font-size:25px;
-			}
-			@media all and (min-width: 1200px) {
-				font-size:40px;
-			}
-		}
-	}
+	display: flex;
+	justify-content: center;
 }
-
-.bounce-top {
-	-webkit-animation: bounce-top 1.5s both;
-			animation: bounce-top 1.5s both;
-}		
-@-webkit-keyframes bounce-top {
-	0% {
-	  -webkit-transform: translateY(-45px);
-			  transform: translateY(-45px);
-	  -webkit-animation-timing-function: ease-in;
-			  animation-timing-function: ease-in;
-	  opacity: 1;
-	}
-	24% {
-	  opacity: 1;
-	}
-	40% {
-	  -webkit-transform: translateY(-24px);
-			  transform: translateY(-24px);
-	  -webkit-animation-timing-function: ease-in;
-			  animation-timing-function: ease-in;
-	}
-	65% {
-	  -webkit-transform: translateY(-12px);
-			  transform: translateY(-12px);
-	  -webkit-animation-timing-function: ease-in;
-			  animation-timing-function: ease-in;
-	}
-	82% {
-	  -webkit-transform: translateY(-6px);
-			  transform: translateY(-6px);
-	  -webkit-animation-timing-function: ease-in;
-			  animation-timing-function: ease-in;
-	}
-	93% {
-	  -webkit-transform: translateY(-4px);
-			  transform: translateY(-4px);
-	  -webkit-animation-timing-function: ease-in;
-			  animation-timing-function: ease-in;
-	}
-	25%,
-	55%,
-	75%,
-	87% {
-	  -webkit-transform: translateY(0px);
-			  transform: translateY(0px);
-	  -webkit-animation-timing-function: ease-out;
-			  animation-timing-function: ease-out;
-	}
-	100% {
-	  -webkit-transform: translateY(0px);
-			  transform: translateY(0px);
-	  -webkit-animation-timing-function: ease-out;
-			  animation-timing-function: ease-out;
-	  opacity: 1;
-	}
-  }

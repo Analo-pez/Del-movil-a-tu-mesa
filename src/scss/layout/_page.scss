@@ -1,89 +1,47 @@
 .hidden {
 	display: none;
 }
-.page__main {
-	background-color: $color-lightprincipal;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.sectionLeft{
-padding-right: 50px;
-width: 40vw;
-transform: translate(0%,-2%);
-background-color: $color-principal;
-@media all and (min-width: 768px) {
-	transform: translate(0%,-2%);}
-	@media all and (min-width: 768px) {
-		transform: translate(0%,-5%);}
-&__title {
-	color: $color-mediumprincipal;
-	text-align: center;
-	@media all and (min-width: 768px) {
-		text-transform:uppercase;
-		font-size: 35px}
-}
-&__text {
-	color: $color-lightprincipal;
-	text-align: center;
-	margin: 10px;
-	@media all and (min-width: 768px) {
-		font-size:20px;
-		margin: 20px;}
-	@media all and (min-width: 1200px) {
-		font-size: 25px;
-		margin-right: 80px;
-	}
-}
-}
-.sectionRight{
-width:66.7vw;
-transform: translate(-10%,0%);
-background-color: $color-mediumprincipal;
-padding-bottom: 80px;
 
-&__title {
-	color: $color-principal;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	@media all and (min-width: 768px) {
-		text-transform:uppercase;
-	font-size: 30px}
-
-}
-&__article {
-	border-top: 5px solid $color-lightprincipal;
+.mainPage {
+	padding-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
-	text-align: center;
-
-	&--box {
-		margin-top: 20px ;
-		@media all and (min-width: 768px) {
-			margin-left:20px;
-			font-size: 20px;}
-		@media all and (min-width: 1200px) {
-			font-size: 25px;
+	&__drinks {
+		margin-bottom: 30px;
+		&--type {
+			display:flex;
+			justify-content: space-between;
+			margin: 10px;
 		}
 	}
-	&--img {
-		width: 150px;
-		height: 140px;
-		cursor: pointer;
-		@media all and (min-width: 768px) {
-			width: 200px;
-			height: 180px;
+	&__share {
+		margin-bottom: 30px;
+		&--type {
+			display:flex;
+			justify-content: space-between;
+			margin: 10px;
 		}
 	}
-	@media all and (min-width: 768px) {
-		flex-direction: row;
-		align-items: center;
-		margin-left: 40px;
-		margin-right: 40px;
-	  }
-}
 }
 
-  
+
+.form-group{
+display: flex;
+flex-direction: column;
+width: 380px;
+}
+
+.form-control {
+	width: 50px;
+}
+
+.buttonBox{
+	display:flex;
+	justify-content: flex-end;
+	margin-top: 30px;	
+}
+.btn {
+	padding: 5px;
+	border: 5px solid $color-principal;
+}

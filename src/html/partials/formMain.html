@@ -1,0 +1,29 @@
+<section></section>
+<form class="form-group">
+    <fieldset>
+        <div class="form__name">
+            <label for="name">Nombre completo</label>
+            <input class="input__name js-input-name" type="text" id="name" name="name" placeholder="Ej: Señor Croqueta"
+                required />
+        </div>
+        <div class="form__phone">
+            <label for="phone">Teléfono</label>
+            <input class="input__phone js-input-phone" type="tel" id="phone" name="phone" placeholder="Ej: 555 2587695"
+                pattern="[0-9]{9}" required />
+        </div>
+        <div class="form__img">
+            <div class="form-group">
+                <label for="imgLoad">Foto de tu mesa</label>
+                <input type="file" class="form-control-file" id="imgLoad">
+            </div>
+        </div>
+        <div class="form__email">
+            <label for="email">Email</label>
+            <input class="input__email js-input-email" type="email" id="email" name="email"
+                placeholder="Ej: rutadelatapa@planet-express.com" />
+        </div>
+        <div class="buttonBox">
+            <button type="submit" class="btn btn-primary">Enviar pedido</button>
+        </div>
+    </fieldset>
+</form>
