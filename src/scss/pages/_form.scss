@@ -1,6 +1,11 @@
 .form {
-    font-size: 0.875em;
-    padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+            width: 500px;
+          }
   
     &__name {
       display: flex;
@@ -55,7 +60,6 @@
     // }
   
     fieldset {
-      padding: 30px;
       border: transparent;
     }
   

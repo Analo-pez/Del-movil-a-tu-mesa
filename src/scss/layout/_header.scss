@@ -1,12 +1,18 @@
 .page__header {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
 	background-color: $color-lightprincipal;
+	
 	  &--profile{
 		  display:flex;
 		  align-self: center;
 		  justify-self: center;
 		  padding: 10px;
+	  }
+	  &--img{
+		  width: 100px;
+		  height: 100px;
 	  }
 	
 }
